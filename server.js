@@ -19,7 +19,7 @@ app.get("/about", function (req, res) {
 });
 
 app.get("/hobbies", function (req, res) {
-    res.send("I love code and all things that you can do with it");
+    res.send("I love: <li>code</li> <li>beer</li> <li>Pizza</li>");
 });
 
 //set up on localhost port 3001
