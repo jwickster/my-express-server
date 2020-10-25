@@ -11,19 +11,18 @@ app.get("/", function (req, res) {
 });
 
 app.get("/contact", function (req, res) {
-    res.send("Contact me at joshwickster@gmail.com");
+    res.send("Contact me at joshwickster@gmail.com or you can call me");
 });
 
 app.get("/about", function (req, res) {
-
     res.send("Software engineer in Salt Lake City Utah");
 });
 
-
-
-
+app.get("/hobbies", function (req, res) {
+    res.send("I love code and all things that you can do with it");
+});
 
 //set up on localhost port 3001
 app.listen(3001, function () {
-    console.log("Server listening on port 3000");
+    console.log("Server listening on port 3001");
 });
