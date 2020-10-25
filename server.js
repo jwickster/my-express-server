@@ -4,15 +4,15 @@ const express = require("express");
 
 const app = express();
 
-app.get("/", function (request, response) {
+app.get("/", function (req, res) {
     //This will show on browser
-    response.send("Hello from response");
+    res.send("<h1>Hello from response</h1>");
     //console.log(request);
 
-})
+});
 
 
-//set up on localhost 3000
+//set up on localhost port 3001
 app.listen(3001, function () {
     console.log("Server listening on port 3000");
 });
